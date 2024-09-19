@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simulator</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Contêiner principal da calculadora -->
+    <div class="calculadora">
+
+        <!-- Campo de texto desabilitado, utilizado para exibir os valores -->
+        <input type="text" id="visor" disabled />
+        
+        <!-- Botões da calculadora, cada um chamando uma função correspondente ao ser clicado -->
+        
+        <button id="numero" onclick="adicionarNumero('1')">1</button>
+        <button id="numero" onclick="adicionarNumero('2')">2</button>
+        <button id="numero" onclick="adicionarNumero('3')">3</button>
+        <button onclick="adicionarOperador('/')">÷</button>
+
+        <button id="numero" onclick="adicionarNumero('4')">4</button>
+        <button id="numero" onclick="adicionarNumero('5')">5</button>
+        <button id="numero" onclick="adicionarNumero('6')">6</button>
+        <button onclick="adicionarOperador('*')">x</button>
+
+        <button id="numero" onclick="adicionarNumero('7')">7</button>
+        <button id="numero" onclick="adicionarNumero('8')">8</button>
+        <button id="numero" onclick="adicionarNumero('9')">9</button>
+        <button onclick="adicionarOperador('-')">-</button>
+
+        <button id="numero" onclick="adicionarNumero('0')">0</button>
+        <button id="numero" onclick="adicionarNumero('.')">.</button>
+        <button id="destaque" onclick="limparVisor()">C</button> <!-- Limpa o visor -->
+        <!-- <button id="destaque" onclick="apagarUltimoCaracter()">⌫</button> -->
+        <button onclick="adicionarOperador('+')">+</button>
+        <button id="uc" onclick="calcular()">=</button> <!-- Realiza o cálculo -->
+
+    </div>
+
+    <script src="/dist/script.js"></script> <!-- Link para o arquivo JavaScript compilado -->
+</body>
+</html>
